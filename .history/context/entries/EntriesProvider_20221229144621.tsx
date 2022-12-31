@@ -39,7 +39,7 @@ export const EntriesProvider: FC<Props> = ({ children }) => {
     
     const [state, dispatch] = useReducer(entriesReducer, ENTRIES_INITIAL_STATE);
 
-    const addNewEntry = ( description: string ) => {
+    const addNewEntry = ( description ) => {
 
         const newEntry: Entry = {
             _id: uuidv4(),

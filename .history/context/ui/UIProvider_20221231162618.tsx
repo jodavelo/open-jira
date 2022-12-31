@@ -38,7 +38,6 @@ export const UIProvider: FC<Props> = ({ children }) => {
             // Methods
             openSideMenu,
             closeSideMenu,
-            
             setIsAddingEntry
         }}>
             { children }

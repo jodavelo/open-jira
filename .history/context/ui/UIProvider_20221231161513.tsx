@@ -27,8 +27,8 @@ export const UIProvider: FC<Props> = ({ children }) => {
         dispatch({ type: 'UI - Close Sidebar' })
     }
 
-    const setIsAddingEntry = ( isAdding: boolean ) => {
-        dispatch({ type: "UI - Set isAddingEntry", payload: isAdding })
+    const setIsAddingEntry = ( payload: boolean ) => {
+        dispatch({ type: "UI - Set isAddingEntry", payload: payload })
     }
 
     return (
@@ -38,7 +38,6 @@ export const UIProvider: FC<Props> = ({ children }) => {
             // Methods
             openSideMenu,
             closeSideMenu,
-            
             setIsAddingEntry
         }}>
             { children }

@@ -5,7 +5,7 @@ interface ContextProps {
     openSideMenu: () => void,
     closeSideMenu: () => void,
     isAddingEntry: boolean,
-    setIsAddingEntry: ( payload: boolean ) => void
+    setIsAddingEntry: () => void
 }
 
 export const UIContext = createContext({} as ContextProps);

@@ -27,19 +27,13 @@ export const UIProvider: FC<Props> = ({ children }) => {
         dispatch({ type: 'UI - Close Sidebar' })
     }
 
-    const setIsAddingEntry = ( isAdding: boolean ) => {
-        dispatch({ type: "UI - Set isAddingEntry", payload: isAdding })
-    }
-
     return (
         <UIContext.Provider value={{
             ...state,
 
             // Methods
             openSideMenu,
-            closeSideMenu,
-            
-            setIsAddingEntry
+            closeSideMenu
         }}>
             { children }
         </UIContext.Provider>
